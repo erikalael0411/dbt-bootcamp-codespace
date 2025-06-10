@@ -1,6 +1,6 @@
 WITH dim_hosts_cleansed AS (
     SELECT *
-    FROM AIRBNB.DEV.SRC_HOSTS
+    FROM {{ref("src_hosts")}}
 )
 SELECT 
 HOST_ID, 
