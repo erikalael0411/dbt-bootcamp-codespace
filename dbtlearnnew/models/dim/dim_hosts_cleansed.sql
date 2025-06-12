@@ -1,3 +1,9 @@
+{{
+config(
+materialized = 'view'
+)
+}}
+
 WITH dim_hosts_cleansed AS (
     SELECT *
     FROM {{ref("src_hosts")}}
